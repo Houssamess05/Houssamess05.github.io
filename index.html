@@ -297,7 +297,7 @@
   </footer>
 
   <script>
-    // Scroll reveal
+    // Serveix per a les animacions d'aparició dels elements quan es fa scroll
     const revealEls = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
@@ -309,7 +309,7 @@
     }, { threshold: 0.12 });
     revealEls.forEach(el => io.observe(el));
 
-    // Nav active highlight on scroll
+    // Serveix per a canviar el color dels enllaços de navegació segons la secció visible
     const sections = document.querySelectorAll('section[id], header');
     const navLinks = document.querySelectorAll('.nav-links a');
     window.addEventListener('scroll', () => {
